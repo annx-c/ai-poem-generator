@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <link rel="stylesheet" href="src/style.css" />
-    <title>AI Spanish Poem Generator</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>AI Spanish Poem Generator</h1>
-      </header>
 
-      <main>
-        
-        <div class="poem" id="poem"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the Spanish poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-      </main>
+  <link rel="stylesheet" href="src/style.css" />
+  <title>AI Spanish Poem Generator</title>
+</head>
 
-      <footer>
-        This AI project was coded by
-        <a href="https://github.com/annx-c" target="_blank">Ana Cañete</a>
-        and is
-        <a
-          href="https://github.com/annx-c/ai-poem-generator"
-          target="_blank"
-        >
-          open-sourced on GitHub</a
-        >.
-      </footer>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Spanish Poem Generator</h1>
+    </header>
+
+    <main>
+
+      <div class="poem" id="poem"></div>
+
+      <form id="poem-generator-form">
+        <input type="text" placeholder="Enter the topic of the Spanish poem" autofocus required autocomplete="off"
+          class="instructions" id="user-instructions" />
+        <input type="submit" class="submit-button" />
+      </form>
+    </main>
+
+   
+  </div>
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Annx_C - AI Poem. All rights reserved. | Open Source: <a
+          href="https://github.com/annx-c/ai-poem-generator" target="_blank">Code</a></p>
+      <div class="social-icons">
+        <a href="https://github.com/annx-c" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/annx_93/?igsh=MXRqeG03aTd2NXA2Mg%3D%3D#" target="_blank"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF98MoxK_9AWgAAAZU0TSGosFfVhT9rhJ_G8JPYCZD5SlB1ekKiWiW_yHJr9FJ_hkMJxficMirJdT7alkqOkMlDrafjNZUqa7E1SOjpOTTLfAnHCC_w2kczHYdDKyifEgGah-A=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fana-ca%25C3%25B1ete-815892280%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
+          target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
 
-    <script src="src/index.js"></script>
-  </body>
+  </footer>
+
+  <script src="src/index.js"></script>
+</body>
+
 </html>
