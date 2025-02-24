@@ -1,5 +1,4 @@
 function displayPoem(response) {
-  console.log("ea");
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,10 +21,6 @@ function generatePoem(event) {
   let poemElement = document.querySelector("#poem");
   poemElement.classList.remove("hidden");
   poemElement.innerHTML = `<div class="clock generating"><img src="/image/reloj.gif" alt="reloj de arena" class="charging"> <span>Generating a Spanish poem about ${instructionsInput.value}</span></div>`;
-
-  console.log(`Generando poem`);
-  console.log(`Promp: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayPoem);
 }
