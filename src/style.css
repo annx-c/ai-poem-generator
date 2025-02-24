@@ -23,11 +23,17 @@ header {
 }
 
 h1 {
+  font-family: "Great Vibes", serif;
   text-align: center;
-  font-weight: 800;
-  font-size: 36px;
+  font-weight: 500;
+  font-size: 45px;
   line-height: 1.5;
   color: #9b59b6;
+}
+
+h1 span{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
 }
 
 .form-container {
@@ -106,6 +112,7 @@ form {
 
 .poem p {
   margin: 0;
+  font-family: "Cutive Mono", serif;
 }
 
 .poem strong {
